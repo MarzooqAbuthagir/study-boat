@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".videolecture"
+    android:orientation="vertical"
+    >
+
+<!--    <ScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="WebViewLayout">-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/tool"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme"
+            android:background="#E70854">
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:layout_gravity="center"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DB3C72"
+        android:orientation="vertical"
+        android:layout_below="@id/tool"
+        android:id="@+id/nametitle">
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:text="Topic Name"/>
+    </LinearLayout>
+
+
+<!--    <VideoView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@id/nametitle"-->
+<!--        android:id="@+id/videoview"/>-->
+
+        <WebView
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:id="@+id/videoview"
+            android:layout_below="@id/nametitle"
+     />
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAY VIDEO"-->
+<!--        android:id="@+id/videoview"-->
+<!--        android:layout_below="@id/nametitle"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+
+
+
+<!--        <com.ct7ct7ct7.androidvimeoplayer.view.VimeoPlayerView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/videoview"-->
+<!--            app:autoPlay="false"-->
+<!--            app:loop="false"-->
+<!--            app:muted="false"-->
+<!--            app:showFullscreenOption="true"-->
+<!--            app:showMenuOption="false"-->
+<!--            app:showOriginalControls="false"-->
+<!--            app:showTitle="false"-->
+<!--            app:topicColor="#FFFF00"-->
+<!--            app:aspectRatio="1.778"-->
+
+<!--            />-->
+
+<!--        <com.ct7ct7ct7.androidvimeoplayer.view.VimeoPlayerView-->
+<!--            android:id="@+id/vimeoPlayer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:autoPlay="false"-->
+<!--            app:loop="false"-->
+<!--            app:muted="false"-->
+<!--            app:showFullscreenOption="false"-->
+<!--            app:showMenuOption="false"-->
+<!--            app:showOriginalControls="false"-->
+<!--            app:showTitle="true"-->
+<!--            app:topicColor="#FFFF00"-->
+<!--            app:aspectRatio="1.778"-->
+<!--            app:backgroundColor="#00FFFF"-->
+<!--            />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@id/videoview"
+        android:id="@+id/subdes">
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity=""
+            android:paddingLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="SUBJECT(S)"/>
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="#DBD9D9"-->
+<!--        android:layout_below="@id/subdes">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cmd"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/subdes"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/cmd"
+           android:id="@+id/scroll"
+           android:layout_marginBottom="70dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scolling"
+
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/videocmd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"/>
+
+    </ScrollView>
+
+</RelativeLayout>
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrolView_account"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="5dp"-->
+<!--            android:text="Comments"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="400dp"-->
+<!--            android:fillViewport="true">-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/videocmd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        </ScrollView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="-70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/cement"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/commends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tvMobNum"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter your text"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/imageselect"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/att"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/sendcmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cmdbutton"
+                android:text="SEND"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+<!--    </ScrollView>-->
+
+</RelativeLayout>

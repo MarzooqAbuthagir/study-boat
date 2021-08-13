@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Study Boat</string>
+
+    <string name="hintUserLogin">User Login</string>
+    <string name="hintMobNum">Mobile Number</string>
+    <string name="hintPassword">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="hintRegister"><u>Register</u></string>
+    <string name="hintFgtPwd"><u>Forgot Password</u></string>
+
+    <string name="hintUserRegister">User Registration</string>
+    <string name="hintName">Name</string>
+    <string name="hintfName">" Father's Name"</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="btnRegister">Register</string>
+
+    <string name="hintUserFgtPwd">Forgot Password</string>
+    <string name="btnFgtPwd">Submit</string>
+
+    <string name="menuDashboard">Home</string>
+    <string name="menuProfile">Profile</string>
+    <string name="menuTest">Create Test</string>
+    <string name="menuPackages">Learn</string>
+    <string name="menuSubscription">Subscriptions</string>
+    <string name="menuReports">Practice Test</string>
+    <string name="menuHelp">Help</string>
+    <string name="menuTC">Terms &amp; Conditions</string>
+    <string name="menuAboutUs">About Us</string>
+    <string name="menuShare">Share</string>
+    <string name="menuLogout">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="logout_title">Logout</string>
+    <string name="logout_msg">Are you sure ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="progresstitle">Loading... Please Wait</string>
+    <string name="somethingwentwrong">Something went wrong</string>
+    <string name="nointernet">Check your Network Connection</string>
+
+    <string name="choose_options">Choose Option(s)</string>
+    <string name="noOfQuestions">Number of Questions</string>
+    <string-array name="numOfQuestions">
+        <item>Select</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string name="testName">Test Name</string>
+    <string name="hintTestName">Eg: Test1, Revision Test</string>
+    <string name="repeatWrong">Repeat wrongly answered questions?</string>
+    <string name="negativeMarks">Include negative marks?</string>
+    <string name="choose_subject">Choose Subject(s)</string>
+    <string name="choose_class">Select your class</string>
+    <string name="choose_option">Choose Options</string>
+    <string name="numberqusestion">Number of Questions</string>
+    <string name="numbermints">Time in Minutes</string>
+    <string name="choose_tname">Test Name</string>
+    <string name="choose_reptquestion">Repeat Skipped / Wrongly Answered Questions</string>
+    <string name="choose_mark">Include negative marks?</string>
+    <string name="submit">SUBMIT</string>
+    <string name="choose_unit">Select Subject(s) - Chapter(s)</string>
+    <string name="reviewandsave">Review &amp; Save</string>
+    <string name="you">(You can find this Test under  &quot;Practice Test&quot; Menu after saving.)</string>
+    <string-array name="yesNo">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="timer">00:00</string>
+    <string name="election_results">election</string>
+
+
+    <string name="enter_minutes">Minutes!</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="stop_timer">Stop Timer</string>
+    <string name="reset_timer">Reset Timer</string>
+    <string name="timers">00:00:00</string>
+    <string name="reg_msg">
+        Payment Successful!
+    </string>
+    <string name="ok">Ok</string>
+
+    <string name="hintSchool">School/College/Institution Name</string>
+    <string name="hintSearch">Search</string>
+    <string name="menuUpdate">Updates</string>
+    <string name="menuEvent">Events</string>
+    <string name="menuDemo">Demo</string>
+    <string name="menuSupport">Support</string>
+    <string name="menuResetPwd">Reset Password</string>
+    <string name="newPwd">New Password</string>
+</resources>

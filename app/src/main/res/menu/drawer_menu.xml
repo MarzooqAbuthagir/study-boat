@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navDashboard"
+            android:icon="@mipmap/home"
+            android:title="@string/menuDashboard" />
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@mipmap/profile"
+            android:title="@string/menuProfile" />
+
+        <item
+            android:id="@+id/navUpdates"
+            android:icon="@drawable/update"
+            android:title="@string/menuUpdate" />
+
+        <item
+            android:id="@+id/navSubscription"
+            android:icon="@mipmap/subcrption"
+            android:title="@string/menuSubscription" />
+
+        <item
+            android:id="@+id/navEvents"
+            android:icon="@drawable/event"
+            android:title="@string/menuEvent" />
+
+        <item
+            android:id="@+id/navDemo"
+            android:icon="@drawable/demoicon"
+            android:title="@string/menuDemo" />
+
+        <item
+            android:id="@+id/navResetPwd"
+            android:icon="@drawable/ic_password"
+            android:title="@string/menuResetPwd" />
+
+        <item
+            android:id="@+id/navSupport"
+            android:icon="@drawable/support"
+            android:title="@string/menuSupport" />
+        <item
+            android:id="@+id/navShare"
+            android:icon="@drawable/share"
+            android:title="@string/menuShare" />
+
+
+
+
+
+        <!--<item-->
+            <!--android:id="@+id/navHelp"-->
+            <!--android:title="@string/menuHelp" />-->
+        <!--<item-->
+            <!--android:id="@+id/navTC"-->
+            <!--android:title="@string/menuTC" />-->
+        <!--<item-->
+            <!--android:id="@+id/navAboutUs"-->
+            <!--android:title="@string/menuAboutUs" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/navShare"-->
+            <!--android:title="@string/menuShare" />-->
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@mipmap/logout"
+            android:title="@string/menuLogout" />
+
+    </group>
+
+</menu>

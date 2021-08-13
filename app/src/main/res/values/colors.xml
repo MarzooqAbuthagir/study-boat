@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2980B9</color>
+    <color name="colorPrimaryDark">#2980B9</color>
+    <color name="colorAccent">#2980B9</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="bg_grey">#BFBFBF</color>
+    <color name="cement">#F2F2F2</color>
+<color name="result">#7A6F6F</color>
+    <color name="nav_text">#616161</color>
+    <color name="colorCell">#5696CC</color>
+    <color name="colorsingle">#00AFAA</color>
+    <color name="reds">#F50707</color>
+
+
+    <color name="progressBarColor">#5696CC</color>
+    <color name="backgroundProgressBarColor">#00AFAA</color>
+
+    <color name="corect">#D8F5B2</color>
+    <color name="corect1">#017F02</color>
+    <color name="incorect">#FCBCBE</color>
+    <color name="incorect1">#D40000</color>
+    <color name="skip">#F6D8B4</color>
+    <color name="skip1">#FF8900</color>
+<color name="my_statusbar_color">#C0392B</color>
+    <color name="my_statusbar_color1">#2980B9</color>
+    <color name="packages">#63A70B</color>
+    <color name="packagesd">#70C272</color>
+    <color name="voil">#8e44ad</color>
+    <color name="voil2">#8d44ad</color>
+    <color name="video">#e70854</color>
+<color name="backt">#FFD5D1D1</color>
+
+    <color name="my_statusbar_color4">#F39c12</color>
+    <color name="progrss">#00ff00</color>
+
+    <color name="tab_package">#64a70a</color>
+    <color name="tab_video">#e60853</color>
+    <color name="emptyMsg">#a1a1a1</color>
+</resources>

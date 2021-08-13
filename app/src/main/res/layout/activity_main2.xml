@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppTheme"
+        android:background="#C0392B"
+        app:collapseIcon="@drawable/ic_arrow_back">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exam(s)"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp" />
+
+<!--                <me.relex.circleindicator.CircleIndicator-->
+<!--                    android:id="@+id/indicator"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+
+<!--                    android:orientation="horizontal"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:layout_alignParentBottom="true"/>-->
+
+                <LinearLayout
+                android:id="@+id/SliderDots"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" />
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="7dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scrolling">
+                <TextView
+                    android:id="@+id/textmarquee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:linksClickable="true"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="marquee"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:padding="5dp"
+
+            android:orientation="vertical">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:id="@+id/recyclerView"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:layout_width="match_parent"
+                app:spanCount="1"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                app:cardUseCompatPadding="true"-->
+
+<!--                android:background="@drawable/neet"-->
+
+<!--                card_view:cardUseCompatPadding="true"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:id="@+id/creattest"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center"-->
+
+<!--                    android:orientation="horizontal">-->
+<!--<LinearLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="80dp"-->
+<!--    android:padding="5dp"-->
+<!--    android:background="@drawable/exame">-->
+<!--    <ImageView-->
+<!--        android:layout_width="60dp"-->
+
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/neets"/>-->
+<!--</LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/neet"-->
+<!--                        android:elevation="5dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:textColor="@color/white"-->
+
+<!--                            android:text="NEET"/>-->
+<!--                        -->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/white"-->
+
+<!--                            android:paddingBottom="5dp"-->
+<!--                            android:maxLines="3"-->
+<!--                            android:text="National Eligibility Cum Entrance Test"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                app:cardUseCompatPadding="true"-->
+
+<!--                android:background="@drawable/iit"-->
+<!--                card_view:cardUseCompatPadding="true"-->
+
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:id="@+id/iit"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:background="@drawable/exame">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="60dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/iit_jee"/>-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:background="@drawable/iit"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textColor="@color/white"-->
+
+<!--                            android:text="IIT - JEE"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:maxLines="3"-->
+<!--                            android:paddingBottom="5dp"-->
+<!--                            android:text="Joint Entrance Examination"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                app:cardUseCompatPadding="true"-->
+
+<!--                android:background="@drawable/neet"-->
+
+<!--                card_view:cardUseCompatPadding="true"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:id="@+id/event"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center"-->
+
+<!--                    android:orientation="horizontal">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:background="@drawable/exame">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="60dp"-->
+
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_height="60dp"-->
+<!--                            android:background="@drawable/events_web"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/eventp"-->
+<!--                        android:elevation="5dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:textColor="@color/white"-->
+
+<!--                            android:text="EVENTS"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/white"-->
+
+<!--                            android:paddingBottom="5dp"-->
+<!--                            android:maxLines="3"-->
+<!--                            android:text="List of All Events "/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:background="@drawable/iit"&ndash;&gt;-->
+<!--&lt;!&ndash;                card_view:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:elevation="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/tnpsc"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:orientation="horizontal">&ndash;&gt;-->
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/exame">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/tnpsc"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/tnpss"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            android:text="TNPSC"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textStyle="bold" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="13sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            android:paddingBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="Tamil Nadu Public Service Commission"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:background="@drawable/iit"&ndash;&gt;-->
+<!--&lt;!&ndash;                card_view:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:elevation="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/upsc"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/exame">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/ups"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/upsc"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:orientation="vertical">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:text="UPSC"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="13sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:paddingBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:maxLines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Union Public Service Commission"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:background="@drawable/iit"&ndash;&gt;-->
+<!--&lt;!&ndash;                card_view:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:elevation="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/ibss"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/exame">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:background="@drawable/ibs"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/ibsd"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            android:text="IBPS"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="13sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="Institute of Banking Personnel Selection"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardUseCompatPadding="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                card_view:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:background="@drawable/iit"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:elevation="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/rrb"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/exame">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:background="@drawable/rrbss"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/rrb"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                      android:text="RRB"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="13sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="Railway Recruitment Board"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardUseCompatPadding="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                card_view:cardUseCompatPadding="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                android:background="@drawable/iit"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/SSC"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/exame">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:background="@drawable/ssc"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@drawable/ssb"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    android:text="SSC"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="13sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="Staff Selection Commission"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+        </LinearLayout>
+<!--&lt;!&ndash;        </ScrollView>&ndash;&gt;-->
+    </LinearLayout>
+
+</LinearLayout>

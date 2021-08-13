@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singlequstionevent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/AppTheme"
+
+
+
+
+
+                android:background="#2980B9">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title" />
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#3498DB"
+                    android:onClick="btClick"
+                    android:text="Previous"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#2980B9 "
+                    android:onClick="btClick"
+
+                    android:text="next"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/qnos"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+
+                    android:background="#008BD6"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:padding="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/counter"/>
+
+                            <TextView
+                                android:id="@+id/countdownTexts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingLeft="5dp"
+                                android:gravity="center"
+                                android:text="@string/timer"
+                                android:textColor="@color/white"
+
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+
+                        />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="#3498DB"
+                        android:padding="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:background="#3498DB">
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:paddingLeft="5dp"
+
+                                android:background="@drawable/question_num"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+
+                                android:id="@+id/qno"
+                                android:text="3/6 "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:visibility="gone"
+                                android:id="@+id/single"
+                                android:text=" "/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        >
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="END TEST"
+                            android:id="@+id/button3"
+                            android:textColor="@color/white"
+                            android:background="#008BD6">
+
+                        </Button>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qnos"
+                    android:orientation="vertical">
+
+                    <Chronometer
+                        android:layout_width="-100dp"
+                        android:layout_height="-100dp"
+                        android:textSize="-3000sp"
+                        android:textColor="#00FAF7F7"
+                        android:id="@+id/chrome"/>
+
+
+
+                    <TextView
+                        android:id="@+id/question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                        android:textSize="13dp"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="10dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content">
+                        <katex.hourglass.in.mathlib.MathView
+                            app:setTextColor="@color/black"
+
+                            android:padding="10dp"
+                            app:setClickable="true"
+                            android:id="@+id/questionm"
+                            android:gravity="center"
+
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:id="@+id/qimage"/>
+
+                        <katex.hourglass.in.mathlib.MathView
+                            app:setTextColor="@color/black"
+
+                            android:padding="10dp"
+                            app:setClickable="true"
+                            android:id="@+id/questionm2"
+                            android:gravity="center"
+
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:id="@+id/qimage2"/>
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/questionm3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:gravity="center"
+
+                            android:padding="10dp"
+                            app:setClickable="true"
+                            app:setTextColor="@color/black" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:id="@+id/qimage3"/>
+                        <katex.hourglass.in.mathlib.MathView
+                            app:setTextColor="@color/black"
+
+                            android:padding="10dp"
+                            app:setClickable="true"
+                            android:id="@+id/question4"
+                            android:gravity="center"
+
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:id="@+id/qimage4"/>
+                        <katex.hourglass.in.mathlib.MathView
+                            app:setTextColor="@color/black"
+
+                            android:padding="10dp"
+                            app:setClickable="true"
+                            android:id="@+id/question5"
+                            android:visibility="gone"
+                            android:gravity="center"
+
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+                    <!--<RadioGroup-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:id="@+id/groupradio"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--&lt;!&ndash; In RadioGroup create the 1 Radio Button&ndash;&gt;-->
+                    <!--&lt;!&ndash; like this we will add some more Radio Button&ndash;&gt;-->
+                    <!--<RadioButton-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/radia_id1"-->
+                    <!--android:text="DBMS"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:background="@drawable/yourbuttonbackground"-->
+                    <!--android:textSize="13dp"/>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="10dp">-->
+
+                    <!--</LinearLayout>-->
+                    <!--<RadioButton-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:id="@+id/radia_id2"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+
+                    <!--android:paddingLeft="0dp"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:background="@drawable/yourbuttonbackground"-->
+                    <!--android:text="C/C++ Programing"-->
+                    <!--android:textSize="13dp"/>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="10dp">-->
+
+                    <!--</LinearLayout>-->
+                    <!--<RadioButton-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/radia_id3"-->
+                    <!--android:layout_gravity="center_vertical"-->
+
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:background="@drawable/yourbuttonbackground"-->
+                    <!--android:text="Data Structure"-->
+                    <!--android:textSize="13dp"/>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="10dp">-->
+
+                    <!--</LinearLayout>-->
+                    <!--<RadioButton-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:paddingLeft="0dp"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:id="@+id/radia_id4"-->
+                    <!--android:text="Algorithms"-->
+                    <!--android:layout_gravity="center_vertical"-->
+
+                    <!--android:background="@drawable/yourbuttonbackground"-->
+                    <!--android:textSize="13dp"/>-->
+                    <!--</RadioGroup>-->
+
+                    <RadioGroup
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/groupradio"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- In RadioGroup create the 1 Radio Button-->
+                        <!-- like this we will add some more Radio Button-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:background="@drawable/yourbuttonbackground"
+
+                                android:paddingBottom="10dp"
+                                android:id="@+id/op1"
+                                >
+                                <RadioButton
+                                    android:layout_width="40dp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/radia_id1"
+
+                                    android:clickable="false"
+
+                                    android:textSize="13dp">
+
+
+                                </RadioButton>
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/radia_id1f1"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:visibility="gone"
+                                    android:id="@+id/radio1image"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp">
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:id="@+id/op2"
+                                android:background="@drawable/yourbuttonbackground"
+
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/radia_id2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:clickable="false"
+                                    android:gravity="center_vertical"
+
+                                    android:textSize="13dp" />
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/radia_id1f2"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:visibility="gone"
+                                    android:id="@+id/radio2image"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:background="@drawable/yourbuttonbackground"
+
+                                android:paddingBottom="10dp"
+
+                                android:id="@+id/op3"
+                                >
+                                <RadioButton
+                                    android:layout_width="40dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/radia_id3"
+
+                                    android:clickable="false"
+                                    android:textSize="13dp"/>
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/radia_id1f3"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:visibility="gone"
+                                    android:id="@+id/radio3image"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/yourbuttonbackground"
+
+                                android:id="@+id/op4">
+                                <RadioButton
+                                    android:layout_width="40dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/radia_id4"
+                                    android:clickable="false"
+                                    android:textSize="13dp"/>
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/radia_id1f4"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:visibility="gone"
+                                    android:id="@+id/radio4image"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#2980B9"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/sub"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#2980B9"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/chap"
+                            android:text=""/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/countdownText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:drawableLeft="@drawable/ic_access_alarm_black_24dp"-->
+    <!--android:text="@string/timer"-->
+    <!--android:textColor="#7DD512"-->
+    <!--android:textSize="30sp"-->
+    <!--android:textStyle="bold" />-->
+
+
+    <!--/>-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="END TEST"-->
+    <!--android:id="@+id/button3"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:background="#7DD512">-->
+
+    <!--</Button>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:background="#7A6F6F">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:id="@+id/qno"-->
+    <!--android:text="3/6 "/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:id="@+id/single"-->
+    <!--android:text=" "/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/question"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Large Text"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:padding="10dp"/>-->
+
+    <!--<RadioGroup-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:id="@+id/groupradio"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--&lt;!&ndash; In RadioGroup create the 1 Radio Button&ndash;&gt;-->
+    <!--&lt;!&ndash; like this we will add some more Radio Button&ndash;&gt;-->
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:id="@+id/radia_id1"-->
+    <!--android:text="DBMS"-->
+    <!--android:textSize="14dp"/>-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:id="@+id/radia_id2"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:text="C/C++ Programing"-->
+    <!--android:textSize="14dp"/>-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:id="@+id/radia_id3"-->
+    <!--android:text="Data Structure"-->
+    <!--android:textSize="14dp"/>-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:id="@+id/radia_id4"-->
+    <!--android:text="Algorithms"-->
+    <!--android:textSize="14dp"/>-->
+    <!--</RadioGroup>-->
+
+
+
+
+
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+
+    <!--android:weightSum="2">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/black"-->
+    <!--android:onClick="btClick"-->
+    <!--android:text="previews"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/black"-->
+    <!--android:onClick="btClick"-->
+
+    <!--android:text="next"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--</LinearLayout>-->

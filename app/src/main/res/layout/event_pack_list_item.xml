@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ash">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@drawable/p2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:id="@+id/testname"
+                    android:text=""
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+android:visibility="gone"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/subtittle"
+                    android:gravity="left"
+                    android:text="Junior Dr 9th Foundation pack"
+
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Test Name                     : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:id="@+id/tname"
+
+                    android:layout_weight="1"
+                    android:text=" 1246 Nos."
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+
+                        android:text="Subject Name               : "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=" 3"
+                        android:id="@+id/sname"
+                        android:maxLines="10"
+                        android:paddingRight="5dp"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+
+                        android:text="Number of Question   : "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=" NEET"
+
+                        android:id="@+id/noques"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+android:id="@+id/labelTxtDur"
+                        android:text="Duration "
+                        android:textColor="@color/black"
+android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="(Minutes)      "
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=": "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=" "
+
+                        android:id="@+id/tvDur"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_grey"></LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:background="@drawable/botom"-->
+            <!--                android:orientation="vertical">-->
+            <!--                <Button-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:textColor="#2441A8"-->
+            <!--                    android:text="Take Test"-->
+            <!--                    android:background="#CCC7C7"-->
+            <!--                    android:id="@+id/reset"-->
+            <!--                    android:paddingRight="0dp"-->
+            <!--                    android:paddingLeft="5dp"-->
+            <!--                    android:gravity="center_vertical"-->
+            <!--                    android:layout_height="20dp"-->
+            <!--                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp" />-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/botom"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/buy1"
+                    >
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#2d7ab0"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="TAKE TEST"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:textColor="#2d7ab0"
+                        android:textSize="15dp"
+                        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/already_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/botom"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/emptyMsg"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="ALREADY TAKEN"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/ash">-->
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--card_view:cardCornerRadius="10dp"-->
+    <!--card_view:cardElevation="6dp"-->
+    <!--card_view:cardUseCompatPadding="true"-->
+    <!--android:layout_margin="3dp">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5dp"-->
+    <!--android:background="#11C5B4">-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18dp"-->
+    <!--android:text="NEET - Junior Doctor"-->
+    <!--android:textStyle="bold"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="left"-->
+
+    <!--android:text="Subject Name"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/sname"-->
+    <!--android:gravity="right"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="left"-->
+    <!--android:text="Test Name"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/tname"-->
+    <!--android:gravity="right"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="Number of Question"-->
+    <!--android:gravity="left"-->
+
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="right"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:id="@+id/noques"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/result"></LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:orientation="vertical">-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:textColor="#2441A8"-->
+    <!--android:background="@color/white"-->
+    <!--android:text="Take Test"-->
+    <!--android:id="@+id/reset"-->
+    <!--android:paddingRight="30dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:weightSum="2"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="#CCC7C7">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/buy"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:textColor="#3F51B5"-->
+    <!--android:textSize="15dp"-->
+    <!--android:text="BUY NOW"-->
+
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/viewdet"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:textColor="#3F51B5"-->
+    <!--android:textSize="15dp"-->
+    <!--android:gravity="right"-->
+    <!--android:text="VIEW DETAILS"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

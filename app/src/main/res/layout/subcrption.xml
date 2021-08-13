@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppTheme"
+
+
+
+
+
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report(s)"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:id="@+id/tvStudentName" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qnos"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:id = "@+id/relativeLayout11"
+                        android:layout_width = "fill_parent"
+                        android:background = "@drawable/shaperadies"
+
+                        android:layout_height = "50dp"
+                        >
+
+
+
+                        <LinearLayout
+                            android:id = "@+id/Title1"
+                            android:layout_width = "0dp"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "1"
+                            android:ellipsize = "end"
+                            android:orientation="vertical"
+                            android:background = "@drawable/shaperadies"
+
+                            android:padding = "5dp"
+
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/serial_no"/>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width = "0dp"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "3"
+                            android:ellipsize = "end"
+                            android:orientation="vertical"
+                            android:background = "@drawable/cell_shapes"
+
+                            android:padding = "5dp"
+
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:background="@drawable/no_of_attempt"/>
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width = "0dp"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "1"
+                            android:ellipsize = "end"
+                            android:orientation="vertical"
+                            android:background = "@drawable/cell_shapes"
+
+                            android:padding = "5dp"
+
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:background="@drawable/tick"/>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width = "0dp"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "1"
+                            android:ellipsize = "end"
+                            android:orientation="vertical"
+                            android:background = "@drawable/cell_shapes"
+
+                            android:padding = "5dp"
+
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/presentage"/>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width = "0dp"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "2"
+                            android:ellipsize = "end"
+                            android:orientation="vertical"
+                            android:background = "@drawable/shaperadies"                            android:padding = "5dp"
+
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:background="@drawable/file"/>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Kindly create and write a test."
+            android:textColor="@color/emptyMsg"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@id/ButtonsLinearLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Practice Test"
+            android:background="#2980B9 "
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/backb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:background="#3498DB"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

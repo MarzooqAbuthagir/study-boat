@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppTheme"
+
+
+
+
+
+        android:background="?attr/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 1 > "
+                android:textColor="@color/bg_grey"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 2 > "
+                android:textColor="@color/bg_grey"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" STEP 3 > "
+
+                android:textColor="@color/bg_grey"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" STEP 4"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#6aa0c4"
+                android:gravity="center"
+                android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/reviewandsave"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+android:background="@drawable/finallayh"
+                        android:stretchColumns="*">
+
+
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!-- first element of the row-->
+
+                            <TextView
+
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ftet"
+                                android:padding="12dip"
+                                android:layout_marginRight="0.5dp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:layout_marginBottom="1dp"
+                                android:textColor="#000"
+                                android:text="Test Name"
+                                android:textSize="15dp" />
+
+                            <TextView
+
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/rightfinal"
+                                android:layout_marginBottom="1dp"
+
+                                android:id="@+id/tname"
+
+                                android:padding="12dip"
+                                android:text="MCQs - 486 Nos"
+                                android:textColor="#000"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+                        <TableRow
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+                            <!-- first element of the row-->
+
+
+
+                                <TextView
+
+                                    android:textStyle="bold"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#d9e1ed"
+                                    android:layout_marginBottom="1dp"
+                                    android:padding="12dip"
+                                    android:layout_marginRight="0.5dp"
+                                    android:text="Subject(s)"
+                                    android:maxLines="5"
+                                    android:textSize="15dp"
+                                    android:textAllCaps="true"
+                                    android:textColor="#000"
+                                    />
+
+                                <TextView
+
+                                    android:id="@+id/tsubject"
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#f3f9fe"
+                                    android:layout_marginBottom="1dp"
+
+                                    android:padding="12dip"
+                                    android:maxLines="10"
+android:paddingRight="5dp"
+                                    android:text="MCQs - 406 Nos"
+                                    android:textColor="#000"
+                                    android:textSize="15dp" />
+
+
+
+                        </TableRow>
+                        <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- first element of the row-->
+                            <TextView
+
+                                android:textStyle="bold"
+
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:background="#d9e1ed"
+                                android:layout_marginBottom="1dp"
+                                android:padding="12dip"
+                                android:layout_marginRight="0.5dp"
+                                android:text="No. of Questions"
+                                android:textSize="15dp"
+
+                                android:textAllCaps="true"
+                                android:textColor="#000"
+                                />
+
+                            <TextView
+
+                                android:id="@+id/tquestion"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:background="#f3f9fe"
+                                android:layout_marginBottom="1dp"
+
+                                android:padding="12dip"
+                                android:text="MCQs - 406 Nos"
+                                android:textColor="#000"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                           >
+
+                            <!-- first element of the row-->
+                            <TextView
+
+                                android:textStyle="bold"
+
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/finaltex"
+                                android:layout_marginRight="0.5dp"
+                                android:padding="12dip"
+
+
+                                android:text="Time Alloted"
+                                android:textSize="15dp"
+                                android:textAllCaps="true"
+
+
+                                android:textColor="#000"
+                                />
+
+                            <TextView
+
+                                android:id="@+id/ttime"                        android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/finalbottom"
+
+                                android:padding="12dip"
+                                android:text="MCQs - 354 Nos"                                        android:textColor="#000"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="2"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:orientation="horizontal">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Test Name"-->
+                    <!--android:textSize="16dp"-->
+
+                    <!--android:textAllCaps="true"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textStyle="bold"-->
+
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:layout_weight="1"-->
+<!--android:id="@+id/tname"-->
+                    <!--android:paddingTop="20dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="2"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:orientation="horizontal">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Subject(s)"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:textStyle="bold"-->
+
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/tsubject"-->
+
+                    <!--android:paddingTop="20dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="2"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:orientation="horizontal">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="No. of Questions"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:textStyle="bold"-->
+
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/tquestion"-->
+
+                    <!--android:paddingTop="20dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="2"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:orientation="horizontal">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Time Alloted"-->
+                    <!--android:textSize="16dp" -->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textStyle="bold"-->
+
+                    <!--android:layout_weight="1"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:paddingTop="20dp"-->
+                    <!--android:id="@+id/ttime"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="16dp" />-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat Questions"
+                    android:textSize="17dp"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_weight="1"
+                    android:id="@+id/trepet"
+
+                    android:paddingTop="20dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:visibility="gone"
+                android:text="Negative Marks"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:id="@+id/tnegtive"
+                android:visibility="gone"
+
+                android:paddingTop="20dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:id="@+id/sizetext"
+                    android:textColor="@color/reds"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/you"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/ButtonsLinearLayout"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/backb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:background="#3498DB"
+                    android:text="BACK"
+                    android:textColor="@color/white" />
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="create test"
+                    android:layout_gravity="bottom"
+                    android:background="#2980B9 "
+                    android:layout_weight="1" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/qnos"
+        android:background="@drawable/custombordersan"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                >
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id = "@+id/relativeLayout1"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "40dp"
+                    >
+
+
+
+                    <TextView
+                        android:id = "@+id/Title"
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1.02"
+                        android:background = "@drawable/cell_shapess"
+                        android:ellipsize = "end"
+                        android:textColor="@color/black"
+
+
+                        android:text = "04"
+
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:singleLine = "true" />
+
+                    <TextView
+                        android:id = "@+id/Type"
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "3.05"
+                        android:background = "@drawable/cell_shapess"
+                        android:ellipsize = "end"
+
+                        android:textSize="12dp"
+                        android:paddingLeft="5dp"
+                        android:gravity="center_vertical"
+
+                        android:text = "27-6-2019 06:02pm"
+                        android:textColor="@color/black"
+                        android:singleLine = "true" />
+
+                    <TextView
+                        android:id = "@+id/Duration"
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1.04"
+                        android:background = "@drawable/cell_shapess"
+                        android:ellipsize = "end"
+
+                        android:textSize="12dp"
+                        android:gravity="center"
+
+                        android:textColor="@color/black"
+                        android:text = "020"
+                        android:singleLine = "true" />
+
+                    <TextView
+                        android:id = "@+id/Marks"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1.02"
+                        android:background = "@drawable/cell_shapess"
+                        android:ellipsize = "end"
+
+                        android:textSize="12dp"
+
+                        android:textColor="@color/black"
+                        android:text = "100%"
+                        android:singleLine = "true" />
+
+                    <TextView
+                        android:id = "@+id/Attempts"
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "2"
+                        android:background = "@drawable/cell_shapess"
+                        android:ellipsize = "end"
+                        android:gravity="center"
+
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text = "View"
+                        android:singleLine = "true" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

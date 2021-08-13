@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:gravity="center">
+
+        <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppTheme"
+
+
+
+
+
+        android:background="#70C272">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package(s)"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#A8C9B3"
+                    android:onClick="btClick"
+                    android:text="BACK"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#4BD17A"
+android:visibility="gone"
+                    android:text="PAID"
+                    android:textColor="@color/white" />
+
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#4BD17A"
+                    android:onClick="btClick"
+
+                    android:text="BUY NOW"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_height="match_parent">
+                            <androidx.cardview.widget.CardView
+
+
+                                card_view:cardUseCompatPadding="true"
+
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/qnos"
+                                        android:orientation="horizontal"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/back"
+                                        android:paddingLeft="6dp"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/white"
+                                            android:layout_gravity="center"
+                                            android:gravity="center_vertical"
+                                            android:id="@+id/btittle"
+                                            android:textStyle="bold"
+                                            android:textSize="18sp"
+                                            android:text="NEET - Junior Doctor"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/qnos"
+                                        android:background="@drawable/customborder"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:padding="3dp"
+                                            >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/stittle"
+                                                android:text="Junior Dr 9th Foundation Pack"
+                                                />
+                                        </LinearLayout>
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="30dp"
+                                            android:paddingLeft="2dp"
+                                            android:paddingRight="2dp"
+
+                                            android:orientation="vertical">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:weightSum="2"
+                                                android:orientation="horizontal">
+                                                <TextView
+
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="#b0b0b0"
+                                                    android:padding="10dip"
+                                                    android:layout_marginRight="0.5dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:text="EXAM"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+
+                                                <TextView
+                                                    android:layout_weight="1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="0.5dp"
+                                                    android:background="#ededed"
+                                                    android:padding="10dip"
+                                                    android:text="NEET"
+                                                    android:id="@+id/exam"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:weightSum="2"
+                                                android:orientation="horizontal">
+                                                <TextView
+
+                                                    android:textStyle="bold"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="#b0b0b0"
+                                                    android:padding="10dip"
+                                                    android:layout_marginRight="0.5dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:text="SUBJECT(S)"                                        android:textColor="#000"
+                                                    android:textSize="12dp" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="0.5dp"
+                                                    android:layout_weight="1"
+                                                    android:background="#ededed"
+                                                    android:padding="10dip"
+                                                    android:text="3"
+                                                    android:id="@+id/subject"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:weightSum="2"
+                                                android:orientation="horizontal">
+                                                <TextView
+
+                                                    android:textStyle="bold"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="#b0b0b0"
+                                                    android:padding="10dip"
+                                                    android:layout_marginRight="0.5dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:text="TOTAL QUESTION(S)"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+
+                                                <TextView
+                                                    android:layout_weight="1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="0.5dp"
+                                                    android:background="#ededed"
+                                                    android:padding="10dip"
+                                                    android:id="@+id/totalq"
+                                                    android:text="1246 Nos"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:weightSum="2"
+                                                android:orientation="horizontal">
+                                                <TextView
+
+                                                    android:textStyle="bold"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="#b0b0b0"
+                                                    android:padding="10dip"
+                                                    android:layout_marginRight="0.5dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:text="PRICE"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+
+                                                <TextView
+                                                    android:layout_weight="1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="0.5dp"
+                                                    android:background="#ededed"
+                                                    android:padding="10dip"
+                                                    android:text="RS.600"
+                                                    android:id="@+id/prices"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:weightSum="2"
+                                                android:orientation="horizontal">
+                                                <TextView
+
+                                                    android:textStyle="bold"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="#b0b0b0"
+                                                    android:padding="10dip"
+                                                    android:layout_marginRight="0.5dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:text="VALIDITY"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+
+                                                <TextView
+                                                    android:layout_weight="1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="0.5dp"
+                                                    android:background="#ededed"
+                                                    android:padding="10dip"
+                                                    android:text="180 Days"
+                                                    android:id="@+id/valitity"
+                                                    android:textColor="#000"
+                                                    android:textSize="12dp" />
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:paddingTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="1dp"
+                        android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+
+                        <!-- first row of the table layout-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#b0b0b0"
+                                android:padding="10dip"
+                                android:layout_marginRight="0.5dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="1dp"
+                                android:text="SUBJECT(S)"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0.5dp"
+                                android:background="#b0b0b0"
+                                android:padding="10dip"
+                                android:text="QUESTION(S)"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ListView
+                            android:layout_height="280dp"
+                            android:layout_width="match_parent"
+                            android:id="@+id/list">
+
+                        </ListView>
+
+
+
+
+
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:orientation="horizontal">-->
+                        <!--<TextView-->
+
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="#ededed"-->
+                        <!--android:padding="10dip"-->
+                        <!--android:layout_marginRight="0.5dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginBottom="1dp"-->
+                        <!--android:text="Chemistry"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:textSize="12dp" />-->
+
+                        <!--<TextView-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="0.5dp"-->
+                        <!--android:background="#ededed"-->
+                        <!--android:padding="10dip"-->
+                        <!--android:text="MCQs - 486 Nos"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:textSize="12dp" />-->
+                        <!--</LinearLayout>-->
+
+
+
+                    </TableLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:orientation="vertical">-->
+    <!--<android.support.v7.widget.Toolbar-->
+
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--app:theme="@style/AppTheme"-->
+
+
+
+
+
+        <!--android:background="#70C272">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Packages"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/toolbar_title" />-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView-->
+            <!--android:id="@+id/textView1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="NEET - Junior Doctor"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center|bottom"-->
+            <!--android:orientation="horizontal" >-->
+
+            <!--<Button-->
+                <!--android:id="@+id/button1"-->
+                <!--style="?android:attr/buttonStyleSmall"-->
+                <!--android:layout_width="145dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center"-->
+                <!--android:text="1" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/button2"-->
+                <!--style="?android:attr/buttonStyleSmall"-->
+                <!--android:layout_width="145dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center"-->
+                <!--android:text="2" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/button3"-->
+                <!--style="?android:attr/buttonStyleSmall"-->
+                <!--android:layout_width="145dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center"-->
+                <!--android:text="3" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+<!--</LinearLayout>-->

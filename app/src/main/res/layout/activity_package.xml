@@ -1,0 +1,1989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppTheme"
+
+
+
+
+
+        android:background="#63A70B">
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_arrow_back"
+            android:gravity="left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Package(s)"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tabStripEnabled="true"
+                    android:background="@color/white">
+
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <!--    <TabWidget-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#7AB9BABB"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:id="@+id/tablayout"/>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:id="@+id/viewpager"/>-->
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--    android:paddingLeft="5dp"-->
+<!--    android:paddingRight="5dp"-->
+<!--    android:paddingTop="5dp"-->
+<!--    android:id="@+id/recyclerView"-->
+<!--    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+<!--    android:layout_width="match_parent"-->
+<!--    app:spanCount="1"-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_height="match_parent" />-->
+
+    <!--<ScrollView-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent">-->
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:padding="10dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:background="@drawable/p1">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:gravity="left"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:paddingLeft="10dp"-->
+                            <!--android:textSize="16dp"-->
+                            <!--android:text="NEET - Junior Doctor"-->
+                            <!--android:textStyle="bold"/>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="5dp"-->
+
+                        <!--android:orientation="horizontal"-->
+                      <!--&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:id="@+id/sname"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Junior Dr 9th Foundation pack"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="left"-->
+
+                                <!--android:text="Subject(s)    :"-->
+                                <!--android:textColor="@color/black"-->
+
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="left"-->
+                                <!--android:text=" 3"-->
+
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="left"-->
+                                <!--android:text="Question(s):"-->
+                                <!--android:textColor="@color/black"-->
+
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="left"-->
+
+                                <!--android:layout_weight="1"-->
+                                <!--android:text=" 1246 Nos."-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="left"-->
+
+                                <!--android:text="Exam            :"-->
+                                <!--android:textColor="@color/black"-->
+
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="left"-->
+                                <!--android:text=" NEET"-->
+
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="left"-->
+                                <!--android:text="Price            :"-->
+                                <!--android:textColor="@color/black"-->
+
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="left"-->
+
+                                <!--android:layout_weight="1"-->
+                                <!--android:text=" Rs.600"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+
+
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="@drawable/botom">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:id="@+id/buy"-->
+                            <!--&gt;-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:textColor="#3F51B5"-->
+                                <!--android:textSize="15dp"-->
+                                <!--android:text="BUY NOW"-->
+                                <!--android:textStyle="bold"-->
+
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:id="@+id/viewdet"-->
+                            <!--android:layout_weight="1"-->
+                            <!--&gt;-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:textColor="#3F51B5"-->
+                                <!--android:textSize="15dp"-->
+                                <!--android:gravity="right"-->
+                                <!--android:text="VIEW DETAILS"-->
+                                <!--android:textStyle="bold"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p2">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET - Junior Doctor"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="Junior Dr 10th Foundation pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 1380 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.600"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet1"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p3">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET - Super Pack"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="11th and 12th NEET pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 4215 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.1200"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy2"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet2"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p4">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="JEE - Nova Pack"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="11th and 12th JEE pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 5427 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.1200"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy3"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet3"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p5">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET - Junior Doctor"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="Junior Dr 9th Foundation pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 1246 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.600"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy4"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet4"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p7">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET - Super Pack"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="11th and 12th NEET pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 4215 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.1200"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy5"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet5"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p4">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET - Nova Pack"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="11th and 12th JEE pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 1246 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.600"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy6"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet6"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p5">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET | JEE - Super Nova Pack"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="11th and 12th JEE pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 9642 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.600"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy7"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet7"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"></LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ash">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/p1">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="NEET - Junior Doctor"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="left"-->
+                        <!--android:text="Junior Dr 9th Foundation pack"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Subject(s)    :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" 3"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Question(s):"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" 1246 Nos."-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:text="Exam            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text=" NEET"-->
+
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+                            <!--android:text="Price            :"-->
+                            <!--android:textColor="@color/black"-->
+
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="left"-->
+
+                            <!--android:layout_weight="1"-->
+                            <!--android:text=" Rs.600"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/botom">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/buy8"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:text="BUY NOW"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/viewdet8"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textColor="#3F51B5"-->
+                            <!--android:textSize="15dp"-->
+                            <!--android:gravity="right"-->
+                            <!--android:text="VIEW DETAILS"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+<!-- </ScrollView>-->
+
+
+</LinearLayout>

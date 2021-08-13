@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/progrss"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:text="hjjgjhgjhggkjhgjhggjgjhgjhghjggjhgjhgjhjhgjhgjhgjhgjhgjgjgjgjgjgjgjgjhgg"
+                android:paddingRight="5dp"
+android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/chaptres"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:background="@drawable/progrsss"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                >
+                <ProgressBar
+                    android:id="@+id/simpleProgressBar"
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="11dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    android:progress="20"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+                    android:max="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingRight="0dp">
+
+                <TextView
+                    android:id="@+id/overall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+
+                    android:text="cxcvxvx"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/presentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="cxcvxvx"
+
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--set 100 maximum value for the progress bar-->
+
+
+
+
+</LinearLayout>

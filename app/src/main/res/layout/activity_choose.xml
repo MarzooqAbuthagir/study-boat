@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/textHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/choose_options"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/textNoOfQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textHead"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/noOfQuestions"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinnerNoOfQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNoOfQuestions"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_border"
+                android:entries="@array/numOfQuestions"
+                android:padding="5dp"></Spinner>
+
+            <TextView
+                android:id="@+id/textTestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerNoOfQuestions"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/testName"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/etTestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTestName"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_border"
+                android:hint="@string/hintTestName"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textRepeatWrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etTestName"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/repeatWrong"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinnerRepeatWrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRepeatWrong"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_border"
+                android:entries="@array/yesNo"
+                android:padding="5dp"></Spinner>
+
+            <TextView
+                android:id="@+id/textNegativeMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerRepeatWrong"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/negativeMarks"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinnerNegativeMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNegativeMarks"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_border"
+                android:entries="@array/yesNo"
+                android:padding="5dp"></Spinner>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

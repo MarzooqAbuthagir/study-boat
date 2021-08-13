@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:right="0dp" android:top="0dp">
+                <shape>
+                    <corners android:topLeftRadius="5dp"
+                        android:bottomLeftRadius="5dp"/>
+                    <solid android:color="#19000000" />
+                </shape>
+
+            </item>
+            <item android:bottom="2dp"
+android:top="2dp"
+                android:left="2dp">
+                <shape>
+                    <gradient android:angle="270"
+                        android:endColor="#fff" android:startColor="#fff" />
+                    <stroke android:width="0dp" android:color="#BABABA" />
+                    <corners android:topLeftRadius="5dp"
+                        android:bottomLeftRadius="5dp"/>
+                    <padding android:bottom="10dp"
+                        />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
+
+
+
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="#CABBBBBB"/>-->
+            <!--<corners android:topLeftRadius="5dp"-->
+                <!--android:bottomLeftRadius="5dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item-->
+        <!--android:left="2dp"-->
+        <!--android:right="0dp"-->
+        <!--android:top="2dp"-->
+        <!--android:bottom="2dp">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="@android:color/white"/>-->
+            <!--<corners android:topLeftRadius="5dp"-->
+                <!--android:bottomLeftRadius="5dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+<!--</layer-list>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+    <!--&lt;!&ndash; we define background color &ndash;&gt;-->
+    <!--<solid android:color="#FFF" />-->
+
+    <!--&lt;!&ndash; we define border color and thick &ndash;&gt;-->
+    <!--<stroke-->
+        <!--android:width="2dp"-->
+        <!---->
+        <!--android:color="#c0c0c0" />-->
+
+    <!--&lt;!&ndash; add some padding for text inside &ndash;&gt;-->
+    <!--<padding-->
+        <!--android:bottom="15dp"-->
+        <!--android:left="15dp"-->
+        <!--android:right="15dp"-->
+        <!--android:top="15dp" />-->
+
+    <!--&lt;!&ndash; we define corner radius, note that radius can be different for each corner &ndash;&gt;-->
+    <!--<corners android:topLeftRadius="5dp"-->
+        <!--android:bottomLeftRadius="5dp"/>-->
+
+<!--</shape>-->

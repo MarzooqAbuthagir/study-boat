@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ash">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+        android:id="@+id/button"
+    android:background="@drawable/p2">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:gravity="left"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+android:id="@+id/exames"
+    android:textSize="16dp"
+    android:text="NEET - Junior Doctor"
+    android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+
+    android:orientation="horizontal"
+    >
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:text="Junior Dr 10th Foundation pack"
+android:id="@+id/tittle"
+    android:layout_weight="1"
+    />
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+
+    android:text="Subject(s)     "
+    android:textColor="@color/black"
+
+    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:text=" 3"
+        android:id="@+id/subjects"
+
+    />
+            </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:text="Question(s) "
+    android:textColor="@color/black"
+    android:id="@+id/videos"
+    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="left"
+
+    android:layout_weight="1"
+    android:text=" 1380 Nos."
+        android:id="@+id/noques"
+    />
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+
+    android:text="Exam             "
+    android:textColor="@color/black"
+
+    />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:text=" NEET"
+        android:id="@+id/exam"
+
+    />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:text="Price             "
+    android:textColor="@color/black"
+        android:id="@+id/prices1"
+    />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="left"
+
+    android:layout_weight="1"
+    android:text=" Rs.600"
+        android:id="@+id/prices"
+    />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:background="@drawable/botom">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/buy1"
+    >
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#2d7ab0"
+    android:textSize="15dp"
+    android:text="BUY NOW"
+    android:textStyle="bold"
+
+    />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/create"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#2d7ab0"
+                android:textSize="15dp"
+                android:text="CREATE TEST"
+                android:textStyle="bold"
+                android:id="@+id/viewvideos"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewdet1"
+    android:layout_weight="1"
+    >
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#2d7ab0"
+    android:textSize="15dp"
+    android:gravity="right"
+    android:text="VIEW DETAILS"
+    android:textStyle="bold"
+    />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

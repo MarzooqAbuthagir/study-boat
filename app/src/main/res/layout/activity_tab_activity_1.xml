@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/scroegr"-->
+
+<!--            >-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+
+<!--                android:gravity="center"-->
+<!--                android:text="Average"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/white"-->
+
+<!--                android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/qnos"-->
+<!--            android:background="@drawable/customborder"-->
+
+<!--            android:orientation="vertical">-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+
+<!--                android:stretchColumns="*"> &lt;!&ndash; stretch the second column of the layout&ndash;&gt;-->
+
+<!--                &lt;!&ndash; first row of the table layout&ndash;&gt;-->
+
+<!--                <TableRow-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:text="SCORE"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#BDC3C7"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:layout_marginRight="0.5dp"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#ECF0F1"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:id="@+id/score"-->
+<!--                        android:text="3/20"-->
+<!--                        android:layout_marginLeft="0.5dp"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginRight="0.5dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#BDC3C7"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:text="PERCENTAGE"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="0.5dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#ECF0F1"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:text="15.0%"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:id="@+id/persentage"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginRight="0.5dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#BDC3C7"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:text="TIME TAKEN"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="0.5dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#ECF0F1"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:text="00:18:27"-->
+<!--                        android:id="@+id/btime"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginRight="0.5dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#BDC3C7"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:text="NO OF ATTEMPTS"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="0.5dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#ECF0F1"-->
+<!--                        android:layout_marginBottom="1dp"-->
+<!--                        android:padding="12dip"-->
+<!--                        android:id="@+id/noof"-->
+<!--                        android:text="00:18:27"                                        android:textColor="#000"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+
+<!--                </TableRow>-->
+
+<!--            </TableLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/scroegr"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+
+            android:gravity="center"
+            android:text="HISTORY"
+            android:textColor="@color/white"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qnos"
+        android:background="@drawable/customborders"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id = "@+id/relativeLayout11"
+                    android:layout_width = "fill_parent"
+                    android:background = "#2980B9"
+
+                    android:layout_height = "50dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:id = "@+id/Title1"
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1"
+                        android:ellipsize = "end"
+                        android:orientation="vertical"
+                        android:background = "@drawable/cell_shapesfirst"
+
+                        android:padding = "5dp"
+
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="21dp"
+                            android:background="@drawable/no_of_attempt" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "2"
+                        android:ellipsize = "end"
+                        android:orientation="vertical"
+                        android:background = "@drawable/cell_shapes"
+
+                        android:padding = "5dp"
+
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/calendar"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1.5"
+                        android:ellipsize = "end"
+                        android:orientation="vertical"
+                        android:background = "@drawable/cell_shapes"
+
+                        android:padding = "5dp"
+
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/clock"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1"
+                        android:ellipsize = "end"
+                        android:orientation="vertical"
+                        android:background = "@drawable/cell_shapes"
+
+                        android:padding = "5dp"
+
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/mark"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "1"
+                        android:ellipsize = "end"
+                        android:orientation="vertical"
+                        android:background = "@drawable/cell_shapes"
+
+                        android:padding = "5dp"
+
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/percentage"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "0dp"
+                        android:layout_height = "match_parent"
+                        android:layout_weight = "2"
+                        android:ellipsize = "end"
+                        android:orientation="vertical"
+                        android:background = "@drawable/cell_shapeslst"
+                        android:padding = "5dp"
+
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/counter"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null" />
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

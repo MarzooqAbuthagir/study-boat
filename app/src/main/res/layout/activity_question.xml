@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/AppTheme"
+
+
+
+
+
+                android:background="@color/voil">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practice"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title" />
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#A56abe"
+                    android:onClick="btClick"
+                    android:text="Previous"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/voil"
+                    android:onClick="btClick"
+
+                    android:text="next"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/qnos"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1"
+
+                    android:background="#9b58b5"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="#A56abe"
+                        android:padding="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:background="#A56abe">
+<!--                            <ImageView-->
+<!--                                android:layout_width="23dp"-->
+<!--                                android:layout_height="23dp"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:paddingLeft="5dp"-->
+
+                                android:background="@drawable/question_num"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+
+                                android:id="@+id/qno"
+                                android:text="1/30"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:visibility="gone"
+                                android:id="@+id/single"
+                                android:text=" "/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        >
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BACK"
+                            android:id="@+id/button3"
+                            android:textColor="@color/white"
+                            android:background="#9b58b5">
+
+                        </Button>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ash">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/list_grad"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"
+
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:text="Question"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="#BDC2C7"
+
+
+                            android:layout_height="1dp"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/question"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Five Kingdom system of classification suggested by R.H Whittaker is not passed on:
+"
+                                android:textSize="15dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:padding="10dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:background="@color/white"
+                                android:layout_height="wrap_content">
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/questionm"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:id="@+id/qimage"/>
+
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/questionm2"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:id="@+id/qimage2"/>
+
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/questionm3"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:id="@+id/qimage3"/>
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/question4"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:id="@+id/qimage4"/>
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+
+                                    android:padding="10dp"
+                                    app:setClickable="true"
+                                    android:id="@+id/question5"
+                                    android:visibility="gone"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ash">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/list_grad"
+                            android:textColor="@color/black"
+android:textAllCaps="false"
+                            android:paddingLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical"
+
+                            android:textStyle="bold"
+                            android:text="Answer"/>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:background="#BDC2C7"
+                           android:layout_height="1dp"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+android:padding="10dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:visibility="gone"
+                                android:id="@+id/answer"
+                                android:text="Correct Answere Here"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_gravity="center">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    android:visibility="gone"
+                                    android:id="@+id/radio1image"/>
+                                <katex.hourglass.in.mathlib.MathView
+                                    app:setTextColor="@color/black"
+                                    app:setClickable="true"
+                                    android:id="@+id/maths"
+
+
+                                    android:layout_gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/explainLayout"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+android:visibility="visible"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ash">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/list_grad"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAllCaps="false"
+                            android:gravity="center_vertical"
+android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+
+                            android:text="Explanation"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:background="#BDC2C7"
+                                android:layout_height="1dp"></LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/explain"
+                                android:visibility="gone"
+                                android:padding="10dp"
+                                android:gravity="center_vertical"
+                                android:text="explaination text come here"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_gravity="center">
+                            <katex.hourglass.in.mathlib.MathView
+                                app:setTextColor="@color/black"
+                                app:setClickable="true"
+                                android:id="@+id/explainationView"
+
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/countdownText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:drawableLeft="@drawable/ic_access_alarm_black_24dp"-->
+    <!--android:text="@string/timer"-->
+    <!--android:textColor="#7DD512"-->
+    <!--android:textSize="30sp"-->
+    <!--android:textStyle="bold" />-->
+
+
+    <!--/>-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="END TEST"-->
+    <!--android:id="@+id/button3"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:background="#7DD512">-->
+
+    <!--</Button>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:background="#7A6F6F">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:id="@+id/qno"-->
+    <!--android:text="3/6 "/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:id="@+id/single"-->
+    <!--android:text=" "/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/question"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Large Text"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:padding="10dp"/>-->
+
+    <!--<RadioGroup-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:id="@+id/groupradio"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--&lt;!&ndash; In RadioGroup create the 1 Radio Button&ndash;&gt;-->
+    <!--&lt;!&ndash; like this we will add some more Radio Button&ndash;&gt;-->
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:id="@+id/radia_id1"-->
+    <!--android:text="DBMS"-->
+    <!--android:textSize="14dp"/>-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:id="@+id/radia_id2"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:text="C/C++ Programing"-->
+    <!--android:textSize="14dp"/>-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:id="@+id/radia_id3"-->
+    <!--android:text="Data Structure"-->
+    <!--android:textSize="14dp"/>-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="70sp"-->
+    <!--android:id="@+id/radia_id4"-->
+    <!--android:text="Algorithms"-->
+    <!--android:textSize="14dp"/>-->
+    <!--</RadioGroup>-->
+
+
+
+
+
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+
+    <!--android:weightSum="2">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/black"-->
+    <!--android:onClick="btClick"-->
+    <!--android:text="previews"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/black"-->
+    <!--android:onClick="btClick"-->
+
+    <!--android:text="next"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--</LinearLayout>-->
